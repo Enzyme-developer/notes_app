@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Noto Sans Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-app{
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.container-one,.container-two{
+  max-width: 100%;
+  width: 600px;
+  padding:1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  margin-bottom: 1.5rem;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid tomato;
+}
+
+input::placeholder, textarea::placeholder{
+  opacity: .5;
+  font-size: 1rem;
+}
+
+#note-text{
+  margin-bottom: 1rem;
+  padding:1rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+#note-text:focus{
+  outline: none;
+  border: 2px solid tomato;
+}
+
+
+#add-btn{
+  background-color: #ff6f47;
+  font-size: 1.2rem;
+  padding: .5rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+#add-btn:focus{
+  outline: none;
+}
+
+#add-btn:hover{
+    background-color: crimson;
+}
+
+.delete-btn{
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.delete-btn:hover{
+  background-color: red;
+}
+
+.edit-btn{
+  background-color:rgb(41, 168, 41) ;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.edit-btn:hover{
+  background-color: green;
+}
+
+hr{
+border: none;
+height: 2px;
+background-color: black;
+margin-bottom: 1rem;
+}
+
+.container-two{
+  margin-top: 1rem;
+}
+
+.last{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.note{
+    background-color: white;
+    /* overflow-x: scroll; */
+    padding: 1rem;
+    border-bottom: 2.5px solid tomato;
+}
+
+.note-title,.note-counter,.note-text{
+    margin-bottom: .6rem;
+    font-size: 1.4rem;
+}
+
+.note-text{
+  margin-bottom: .6rem;
+  font-size: 1.4rem;
+}
+
+#notes{
+  max-width: 100%;
+  width: 600px;
+  /* padding:1rem; */
+  overflow-wrap: break-word;
+}
